@@ -30,6 +30,23 @@
     }
 }
 ```
+3. zappa deploy
+
+The following error can be ignored
+
+```bash
+CloudFormation stack missing, re-deploy to enable updates
+ERROR:Could not get API ID.
+Traceback (most recent call last):
+  File "/home/eyang/miniconda3/envs/lambda/lib/python3.9/site-packages/zappa/core.py", line 2420, in get_api_id
+    response = self.cf_client.describe_stack_resource(StackName=lambda_name, LogicalResourceId="Api")
+  File "/home/eyang/miniconda3/envs/lambda/lib/python3.9/site-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/eyang/miniconda3/envs/lambda/lib/python3.9/site-packages/botocore/client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ValidationError) when calling the DescribeStackResource operation: Stack 'eyang-lambda-dev' does not exist
+Oh no! An error occurred! :(
+```
 
 ### To invoke
 
