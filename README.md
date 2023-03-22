@@ -30,3 +30,13 @@
     }
 }
 ```
+
+### To invoke
+
+```aws lambda invoke --function-name eyang-lambda-dev response.json --profile okta-orangeds```
+
+This is just to test. If you need to use this operationally, you an use boto3 to wrap this in a python script more generally, or turn this into a actual URL (turning into a url is left as an exercise to the reader, since given the need to pass auth information over I find to be a pain in the ass, and for most of our purposes not really necessary, or it's going to be handled by DSE in the context of an app)
+
+```
+```
+
