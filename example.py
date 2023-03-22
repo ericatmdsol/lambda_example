@@ -12,7 +12,7 @@ logger.setLevel(logging.DEBUG)
 def lambda_handler(event=None, context=None):
     logger.info("Lambda function invoked index()")
 
-    return "Flask says Hello!!"
+    return "Hello World"
 
 
 if __name__ == "__main__":
