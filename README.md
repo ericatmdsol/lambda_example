@@ -2,13 +2,13 @@
 
 ### Prereqs
 
-1. Install okta-keyman and aws cli:  pip install awscli aws-okta-keyman
-2. aws_okta_keyman -o mdsol -u your_medidata_id -a 0oaj1kcx7aTjEmXas0x7/272 -r
+1. Install okta-keyman and aws cli:  ```pip install awscli aws-okta-keyman```
+2. ```aws_okta_keyman -o mdsol -u your_medidata_id -a 0oaj1kcx7aTjEmXas0x7/272 -r```
 3. Create a new conda environment to install all necessary packages. In our case our test example only requires flask, but feel free to include other libs that you need **KEEP THE PACKAGES TO A MINIMUM**
 4. ```EXPORT VIRTUAL_ENV=/home/eyang/miniconda3/envs/(your conda_env)``` (for linux)
     - For windows: https://docs.oracle.com/en/database/oracle/machine-learning/oml4r/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html
     - If that doesn't work. I'm sorry you're on your own. **HINT HINT** learning linux isn't a bad thing
-5. Install zappa ``` pip install zappa```
+5. Install zappa ```pip install zappa```
 
 
 ### When creating a new project
